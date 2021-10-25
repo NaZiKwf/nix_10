@@ -2,6 +2,7 @@ package ua.com.alevel;
 import java.util.Scanner;
 
 public class SchoolSchedule {
+
     public void SchoolSchedule() {
         int start = 9 * 60;
         int lesson = 45;
@@ -16,6 +17,4 @@ public class SchoolSchedule {
         m += (input - 1) / 2 * (big - small);
         System.out.println(m / 60 + " " + m % 60);
     }
-
-
 }
