@@ -10,5 +10,7 @@ public class Main {
         Task2.main(null);
         Lvl1Task3 Task3 = new Lvl1Task3();
         Task3.main(null);
+        Lvl2Task1 Task4 = new Lvl2Task1();
+        Task4.main(null);
     }
 }

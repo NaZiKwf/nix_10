@@ -3,6 +3,7 @@ package ua.com.alevel;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
 public class Lvl2Task1 {
 
     public static void main(String[] args) {
@@ -18,40 +19,40 @@ public class Lvl2Task1 {
         while (sc.hasNext()) {
             boolean ch = true;
             String s = sc.nextLine();
-            if (s.isEmpty()){
+            if (s.isEmpty()) {
                 System.out.println(true);
                 continue;
-            }else {
-                if (blist.contains(s.substring(0, 1))|| clist.contains(s.substring(s.length() - 1))) {
+            } else {
+                if (blist.contains(s.substring(0, 1)) || clist.contains(s.substring(s.length() - 1))) {
 
                     System.out.println(false);
                     continue;
                 }
                 char[] chars = s.toCharArray();
-                int x1 = 0,y1 = 0;
-                int x2 = 0,y2 = 0;
-                int x3 = 0,y3 = 0;
+                int x1 = 0, y1 = 0;
+                int x2 = 0, y2 = 0;
+                int x3 = 0, y3 = 0;
                 for (char aChar : chars) {
-                    if (aChar == '('){
+                    if (aChar == '(') {
                         y1++;
                     }
-                    if (aChar==')'){
+                    if (aChar == ')') {
                         x1++;
                     }
-                    if (aChar=='['){
+                    if (aChar == '[') {
                         y2++;
                     }
-                    if (aChar==']'){
+                    if (aChar == ']') {
                         x2++;
                     }
-                    if (aChar=='{'){
+                    if (aChar == '{') {
                         y3++;
                     }
-                    if (aChar=='}'){
+                    if (aChar == '}') {
                         x3++;
                     }
                 }
-                if (y1!=x1||y2!=x2||y3!=x3){
+                if (y1 != x1 || y2 != x2 || y3 != x3) {
 
                     System.out.println(false);
                     continue;
@@ -76,7 +77,7 @@ public class Lvl2Task1 {
                     }
                 }
             }
-            System.out.println(b);
+            System.out.println(ch);
         }
     }
 }
