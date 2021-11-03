@@ -39,12 +39,12 @@ public class UserController {
     private void runNavigation() {
 
         System.out.println();
-        System.out.println("1. If you want create user");
-        System.out.println("2. If you want update user");
-        System.out.println("3. If you want delete user");
-        System.out.println("4. If you want find user by id");
-        System.out.println("5. If you want find all users");
-        System.out.println("0. Exit");
+        System.out.println("1) If you want create user - 1");
+        System.out.println("2) If you want update user - 2");
+        System.out.println("3) If you want delete user - 3");
+        System.out.println("4) If you want find user by id - 4");
+        System.out.println("5) If you want find all users - 5");
+        System.out.println("6) Exit -  0");
         System.out.println();
     }
 
