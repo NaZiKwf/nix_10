@@ -21,7 +21,7 @@ public class UserDAO {
     }
 
     public User findById(String id) {
-        
+
         return DBUser.getInstance().findById(id);
     }
 
