@@ -4,6 +4,7 @@ import ua.com.alevel.DB.DBUser;
 import ua.com.alevel.Entity.User;
 
 public class UserDAO {
+
     public void create(User user) {
         DBUser.getInstance().create(user);
     }

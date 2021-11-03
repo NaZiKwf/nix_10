@@ -17,6 +17,7 @@ public class UserController {
     private final UserService userService = new UserService();
 
     public void run() {
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Select your option");
         String position;
