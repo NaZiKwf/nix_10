@@ -1,4 +1,4 @@
-package ua.com.alevel.Entity;
+package ua.com.alevel.entity;
 
 public class User {
 
@@ -41,7 +41,6 @@ public class User {
 
     @Override
     public String toString() {
-
         return "User{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +

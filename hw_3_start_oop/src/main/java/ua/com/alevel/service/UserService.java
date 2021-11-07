@@ -1,11 +1,12 @@
-package ua.com.alevel.Service;
+package ua.com.alevel.service;
 
-import ua.com.alevel.DAO.UserDAO;
-import ua.com.alevel.Entity.User;
+import ua.com.alevel.dao.UserDAO;
+import ua.com.alevel.entity.User;
 
 public class UserService {
 
     private final UserDAO userDao = new UserDAO();
+
     public static User[] findAll() {
         return UserDAO.findAll();
     }
@@ -25,5 +26,4 @@ public class UserService {
     public User findById(String id) {
         return userDao.findById(id);
     }
-
 }

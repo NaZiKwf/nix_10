@@ -1,7 +1,7 @@
-package ua.com.alevel.Controller;
+package ua.com.alevel.controller;
 
-import ua.com.alevel.Entity.User;
-import ua.com.alevel.Service.UserService;
+import ua.com.alevel.entity.User;
+import ua.com.alevel.service.UserService;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,6 @@ public class UserController {
     private final UserService userService = new UserService();
 
     public void run() {
-
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Select your option");
         String position;
@@ -37,7 +36,6 @@ public class UserController {
     }
 
     private void runNavigation() {
-
         System.out.println();
         System.out.println("1) If you want create user - 1");
         System.out.println("2) If you want update user - 2");
@@ -49,7 +47,6 @@ public class UserController {
     }
 
     private void crud(String position, BufferedReader reader) {
-
         switch (position) {
             case "1":
                 create(reader);
@@ -71,7 +68,6 @@ public class UserController {
     }
 
     private void create(BufferedReader reader) {
-
         try {
             System.out.print("Please, enter name: ");
             String name = reader.readLine();
@@ -97,7 +93,6 @@ public class UserController {
     }
 
     private void update(BufferedReader reader) {
-
         try {
             System.out.print("Please, enter id: ");
             String id = reader.readLine();
@@ -117,7 +112,6 @@ public class UserController {
     }
 
     private void delete(BufferedReader reader) {
-
         try {
             System.out.print("Please, enter id: ");
             String id = reader.readLine();
@@ -128,7 +122,6 @@ public class UserController {
     }
 
     private void findById(BufferedReader reader) {
-
         try {
             System.out.print("Please, enter id: ");
             String id = reader.readLine();
@@ -140,7 +133,6 @@ public class UserController {
     }
 
     private void findAll(BufferedReader reader) {
-
         User[] users = userService.findAll();
         if (users != null && users.length != 0) {
             for (int i = 0; i < users.length; i++) {
@@ -151,5 +143,3 @@ public class UserController {
         }
     }
 }
-
-
